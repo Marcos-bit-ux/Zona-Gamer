@@ -1,0 +1,104 @@
+/*-----------------------------------------------------------------------Comienzo pag. Contactanos---------------------------------------------------------------------------*/
+@use "../Utilities/variables" as *;
+@use "../Utilities/mixins.scss" as m;
+
+.contenedor-contact {
+@include m.flex (column,center);
+}
+
+.title-sucursales {
+  margin-bottom: 10px;
+}
+
+.caja-sucursales {
+  max-width: 40.625rem;
+  margin-bottom: 20px;
+
+  iframe {
+    border-radius: 10px;
+  }
+
+  p {
+    color: $font_color;
+    font-family: $font_principal;
+    font-size: 1.063em;
+  }
+
+  .contacto-redes {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+.caja-form {
+  padding-left: 9.375rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 40.625rem;
+
+  label {
+    color: $font_color;
+    font-size: 0.938em;
+    font-family: $font_forms;
+  }
+
+  input,
+  select,
+  option,
+  textarea{
+
+@include m.forms;
+  }
+
+.btn {
+@include m.buttons;
+  }
+}
+
+/*------------------------------------------------------------------------Final pag. Contactanos------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------- Inicio pag. Login------------------------------------------------------------------------------- */
+
+.layout {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+
+  .grid-login {
+    display: grid;
+    place-items: center;
+  }
+
+  .caja-login {
+    h3 {
+      font-family: $font_principal;
+      font-size: 1em;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    form {
+      display: grid;
+      justify-items: center;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      min-height: 12.5rem;
+
+      label {
+        color: $font_color;
+        font-family: $font_forms;
+        font-size: 1em;
+      }
+
+      input {
+@include m.forms;
+      }
+
+      .btn {
+      @include m.buttons;
+      }
+    }
+  }
+}
+
+/*---------------------------------------------------------------------- Final pag. Login---------------------------------------------------------------------------------- */

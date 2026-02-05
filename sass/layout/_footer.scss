@@ -1,0 +1,101 @@
+@use "../Utilities/variables" as *;
+
+/*----------------------------------------------------------------------- Comienzo del Footer---------------------------------------------------------------------------------*/
+
+footer {
+  background-color: $bg_hyf;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px 5px;
+}
+
+.title-footer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 9px;
+}
+
+.p-footer p {
+  color: $font_color;
+  font-size: 1.25em;
+  font-family: sans-serif;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+.p-footer p:last-child {
+  margin-bottom: 0px;
+}
+
+.logo-redes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo-redes img {
+  width: auto;
+  height: 8.5vh;
+  transition: transform 0.2s ease;
+  display: block;
+  margin-top: 0px;
+}
+
+.logo-redes img:hover {
+  transform: scale(1.1);
+}
+
+/*------------------------------------------------------------------------ Final del Footer---------------------------------------------------------------------------------- */
+
+// -------------------------------------------------------------------------------Nuevo footer---------------------------------------------------------------
+
+footer {
+  background-color: $bg_hyf;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px 5px;
+
+  .title-footer {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-left: 9px;
+  }
+
+  .p-footer {
+    p {
+      color: $font_color;
+      font-size: 1.25em;
+      font-family: sans-serif;
+      margin-left: 10px;
+      margin-bottom: 4px;
+    }
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  .logo-redes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    img {
+      width: auto;
+      height: 8.5vh;
+      transition: transform 0.2s ease;
+      display: block;
+      margin-top: 0px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

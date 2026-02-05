@@ -1,0 +1,55 @@
+@use "../Utilities/variables" as *;
+
+h1 {
+  color: $font_color;
+  font-size: 1.875em;
+  text-align: center;
+  font-family: $font_principal;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  color: $font_color;
+  font-size: 1.5em;
+  font-family: $font_principal;
+  text-align: start;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+h3 {
+  color: $font_color;
+  font-size: 1.125em;
+  font-family: $font_principal;
+  text-align: center;
+}
+
+.contenedor-index {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .product-flex {
+  flex: 1 0 30vw;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.img-producto {
+  width: auto;
+  height: 22vh;
+  margin-top: 10px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+}

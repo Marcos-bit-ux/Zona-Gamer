@@ -1,0 +1,65 @@
+/*-----------------------------------------------------------------------------Comienzo del Reset Css-----------------------------------------------------------------------*/
+@use "../Utilities/variables"as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  line-height: 1.4em;
+  background-color: $bg_body;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  color: inherit;
+}
+
+/*----------------------------------------------------------------------Final del Reseteo de Css---------------------------------------------------------------------------*/
