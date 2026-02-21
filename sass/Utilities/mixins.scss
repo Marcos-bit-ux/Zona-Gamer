@@ -2,8 +2,8 @@
 
 @mixin buttons {
   background-color: $bg_hyf;
-  color: $font_color;
-  font-family: $font_forms;
+  color: $font_colorhyf;
+  font-family: $font_principal;
   transition: 0.3s ease;
   padding: 5px;
   cursor: pointer;
@@ -22,8 +22,8 @@
 
 @mixin forms{
 display: block;
-background-color: #cbc8c8;
-font-family: $font_forms;
+background-color:#f6f6f6;
+font-family: $font_principal;
 color: black;
 padding: 6px;
 border-radius: 4px;
@@ -31,7 +31,7 @@ border: none;
   transition: 0.2s ease;
 
   &:focus {
-    box-shadow: 0 0 0 2px rgba(0, 255, 156, 0.5);
+    box-shadow: 0 0 0 2px rgb(0, 0, 0);
   }
 
 }

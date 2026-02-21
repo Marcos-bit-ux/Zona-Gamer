@@ -16,8 +16,9 @@ html {
 body {
   min-height: 100vh;
   font-size: 100%;
-  line-height: 1.4em;
   background-color: $bg_body;
+  color: $font_colorbody;
+  font-family: $font_principal;
 }
 
 p a {
@@ -26,40 +27,6 @@ p a {
 
 li {
   list-style-type: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-span,
-a,
-strong,
-blockquote,
-i,
-b,
-u,
-em {
-  font-size: 1em;
-  font-weight: inherit;
-  font-style: inherit;
-  text-decoration: none;
-  color: inherit;
-}
-
-form,
-input,
-textarea,
-select,
-button,
-label {
-  font-family: inherit;
-  font-size: inherit;
-  hyphens: auto;
-  color: inherit;
 }
 
 /*----------------------------------------------------------------------Final del Reseteo de Css---------------------------------------------------------------------------*/

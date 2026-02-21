@@ -15,9 +15,8 @@ html {
 body {
   min-height: 100vh;
   font-size: 100%;
-  background-color: #ebeaea;
-  color: #1f1f1f;
-  font-family: "Montserrat", sans-serif;
+  line-height: 1.4em;
+  background-color: rgb(18, 18, 18);
 }
 
 p a {
@@ -30,95 +29,96 @@ li {
 
 /*----------------------------------------------------------------------Final del Reseteo de Css---------------------------------------------------------------------------*/
 header {
-  background-color: #8818ea;
-  min-height: 100px;
-  width: 100%;
+  background-color: rgb(92, 15, 163);
+  min-height: 15vh;
   display: flex;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0.8125rem 0.625rem 0rem;
 }
 header .header-superior {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  width: 100%;
+  margin-top: -10px;
 }
 header .logo {
   width: auto;
-  height: 22px;
-  display: block;
-  flex-shrink: 0;
+  height: 15vh;
+  margin-right: 5px;
 }
 header .search-bar {
-  flex: 1;
-  max-width: 400px;
-  background-color: #ebeaea;
-  height: 31px;
-  border-radius: 20px;
+  background-color: #fff;
+  width: 20vw;
+  height: 5vh;
+  border: #000000 solid 0.125rem;
+  border-radius: 1.875rem;
   display: flex;
   align-items: center;
-  padding: 0 0.625rem;
-  border: 2px solid #afafaf;
 }
 header .search-bar input {
-  font-size: 1em;
+  font-size: 1.063em;
   flex: 1;
-  border: none;
-  outline: none;
-  background: transparent;
-  color: black;
-  padding: 0.3125rem;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  padding-left: 20px;
   cursor: text;
+}
+header .search-bar input::-moz-placeholder {
+  color: #888;
+  font-family: Arial, Helvetica, sans-serif;
 }
 header .search-bar input::placeholder {
   color: #888;
+  font-family: Arial, Helvetica, sans-serif;
 }
 header .search-bar button {
-  border: none;
+  background-color: transparent;
+  width: 3vw;
+  height: 5vh;
+  border-radius: 1.875rem;
   cursor: pointer;
 }
 header .iconos-header {
   display: flex;
-  gap: 0.625rem;
+  gap: 10px;
 }
 header .carrito-icon i {
   font-size: 1.563em;
-  color: #ebeaea;
+  color: rgb(255, 255, 255);
+  margin-left: 10px;
 }
 header .login-icon i {
   font-size: 1.563em;
-  color: #ebeaea;
+  color: rgb(255, 255, 255);
 }
 
 nav .navbar-brand {
-  color: #ebeaea;
+  color: rgb(255, 255, 255);
   font-size: 1.375rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   transition: outline-offset 0.2s ease, background 0.2s ease;
-  font-weight: 600;
 }
 nav .navbar-brand:hover {
-  color: #ebeaea;
+  color: rgb(255, 255, 255);
 }
 nav .navbar-brand:focus {
-  color: #ebeaea;
-  outline: 0.125rem solid rgb(234, 234, 234);
+  color: rgb(255, 255, 255);
+  outline: 0.125rem solid rgb(255, 255, 255);
   outline-offset: 0.1875rem;
 }
 
 .navbar .nav-link {
-  color: #ebeaea;
+  color: rgb(255, 255, 255);
   font-size: 1.375rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   transition: outline-offset 0.2s ease, background 0.2s ease;
-  font-weight: 600;
 }
 .navbar .nav-link:focus {
-  outline: 0.125rem solid rgb(234, 234, 234);
+  outline: 0.125rem solid rgb(255, 255, 255);
   outline-offset: 0.1875rem;
 }
 
@@ -126,6 +126,7 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: -30px;
 }
 nav ul li {
   display: inline-block;
@@ -133,87 +134,60 @@ nav ul li {
 }
 
 h1 {
-  font-size: 1.75em;
+  color: rgb(255, 255, 255);
+  font-size: 1.875em;
   text-align: center;
-  font-weight: 700;
-  letter-spacing: 0.0313rem;
-  margin: 0.8125rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
 h2 {
-  font-size: 1.25em;
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: start;
-  margin: 0.625rem 0.9375rem;
-  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  padding-left: 15px;
 }
 
 h3 {
-  font-size: 1.4em;
+  color: rgb(255, 255, 255);
+  font-size: 1.125em;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  font-weight: 500;
 }
 
 .contenedor-index {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 40px;
-  padding: 1.875rem 0.9375rem;
+  justify-content: center;
 }
 .contenedor-index .product-flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 400px;
-  height: 250px;
-  padding: 0.9375rem;
+  flex: 1 0 30vw;
   text-align: center;
-  background-color: #f6f6f6;
-  border: 2px solid #afafaf;
-  border-radius: 0.625rem;
-  gap: 0.625rem;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.contenedor-index .product-flex h3 {
-  font-size: 1.125em;
-  font-weight: 600;
-  order: 2;
-}
-
-.img-producto {
+.contenedor-index .img-producto {
   width: auto;
-  height: 160px;
+  height: 22vh;
+  margin-top: 10px;
   transition: transform 0.2s ease;
   cursor: pointer;
-  order: 1;
 }
-.img-producto:hover {
-  transform: scale(1.1);
-}
-
-.logo-redes {
-  display: flex;
-  justify-content: center;
-  gap: 0.625rem;
-  padding: 0rem;
-}
-.logo-redes img {
-  width: auto;
-  height: 70px;
-  transition: transform 0.2s ease;
-  margin-top: 0px;
-}
-.logo-redes img:hover {
+.contenedor-index .img-producto:hover {
   transform: scale(1.1);
 }
 
 /*-----------------------------------------------------------------------Comienzo pag. Carrito-------------------------------------------------------------------------------*/
 .p-carrito {
   text-align: center;
-  font-size: 1.375em;
-  font-weight: 500;
+  font-size: 1.1875rem;
+  color: rgb(255, 255, 255);
 }
 .p-carrito p:first-of-type::after {
   content: " 🛒";
@@ -227,52 +201,46 @@ h3 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 30px 15px;
-  margin: 10px;
+}
+
+.title-sucursales {
+  margin-bottom: 10px;
 }
 
 .caja-sucursales {
-  max-width: 900px;
-  width: 100%;
-  margin: auto;
+  max-width: 40.625rem;
+  margin-bottom: 20px;
 }
 .caja-sucursales iframe {
   border-radius: 10px;
 }
 .caja-sucursales p {
-  font-size: 1.188em;
-  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.063em;
 }
-.caja-sucursales p:first-of-type::before {
-  content: "📍";
-}
-.caja-sucursales p:nth-of-type(2)::before {
-  content: "📞";
-}
-.caja-sucursales p:nth-of-type(3)::before {
-  content: "🕑";
+.caja-sucursales .contacto-redes {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .caja-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  max-width: 400px;
-  text-align: center;
+  padding-left: 9.375rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 40.625rem;
 }
 .caja-form label {
-  font-size: 1em;
-  font-weight: 500;
-  margin: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 0.938em;
+  font-family: "Montserrat", sans-serif;
 }
 .caja-form input,
 .caja-form select,
 .caja-form option,
 .caja-form textarea {
-  width: 100%;
   display: block;
-  background-color: #f6f6f6;
+  background-color: #cbc8c8;
   font-family: "Montserrat", sans-serif;
   color: black;
   padding: 6px;
@@ -284,17 +252,11 @@ h3 {
 .caja-form select:focus,
 .caja-form option:focus,
 .caja-form textarea:focus {
-  box-shadow: 0 0 0 2px rgb(0, 0, 0);
-}
-.caja-form input,
-.caja-form select,
-.caja-form option,
-.caja-form textarea {
-  text-align: center;
+  box-shadow: 0 0 0 2px rgba(0, 255, 156, 0.5);
 }
 .caja-form .btn {
-  background-color: #8818ea;
-  color: #ebeaea;
+  background-color: rgb(92, 15, 163);
+  color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
   transition: 0.3s ease;
   padding: 5px;
@@ -303,9 +265,6 @@ h3 {
 .caja-form .btn:hover {
   opacity: 0.85;
   transform: scale(1.05);
-}
-.caja-form .btn {
-  margin-top: 8px;
 }
 
 /*------------------------------------------------------------------------Final pag. Contactanos------------------------------------------------------------------------------*/
@@ -317,38 +276,29 @@ h3 {
 }
 .layout .grid-login {
   display: grid;
-  align-items: center;
-  justify-content: center;
-}
-.layout .grid-login section {
-  max-width: 500px;
-  width: 100%;
-}
-.layout .grid-login section h2 {
-  margin: 10px;
-}
-.layout .caja-login {
-  width: 100%;
-}
-.layout .caja-login a {
-  text-decoration: none;
-  color: inherit;
+  place-items: center;
 }
 .layout .caja-login h3 {
-  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 .layout .caja-login form {
   display: grid;
-  gap: 5px;
+  justify-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  min-height: 12.5rem;
 }
 .layout .caja-login form label {
-  font-size: 18px;
-  font-weight: 500;
-  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
 }
 .layout .caja-login form input {
   display: block;
-  background-color: #f6f6f6;
+  background-color: #cbc8c8;
   font-family: "Montserrat", sans-serif;
   color: black;
   padding: 6px;
@@ -357,16 +307,11 @@ h3 {
   transition: 0.2s ease;
 }
 .layout .caja-login form input:focus {
-  box-shadow: 0 0 0 2px rgb(0, 0, 0);
-}
-.layout .caja-login form input {
-  width: 100%;
-  width: fit-content;
-  justify-self: center;
+  box-shadow: 0 0 0 2px rgba(0, 255, 156, 0.5);
 }
 .layout .caja-login form .btn {
-  background-color: #8818ea;
-  color: #ebeaea;
+  background-color: rgb(92, 15, 163);
+  color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
   transition: 0.3s ease;
   padding: 5px;
@@ -376,17 +321,14 @@ h3 {
   opacity: 0.85;
   transform: scale(1.05);
 }
-.layout .caja-login form .btn {
-  justify-self: center;
-  width: auto;
-}
 
 /*---------------------------------------------------------------------- Final pag. Login---------------------------------------------------------------------------------- */
 /* --------------------------------------------------------------------- Inicio pag.Arma tu Pc------------------------------------------------------------------------------  */
 .div-armatupc {
-  font-size: 1.375em;
+  color: rgb(255, 255, 255);
+  font-size: 1.1875rem;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  font-weight: 500;
 }
 .div-armatupc p::after {
   content: " 💻";
@@ -394,103 +336,168 @@ h3 {
 
 .grid-armado {
   display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: start;
+  grid-template-columns: 31.25rem 1fr;
+  gap: 32px;
 }
-.grid-armado .elegir-componentes {
+.grid-armado .caja1-grid {
+  margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  row-gap: 1.25rem;
-  column-gap: 1.25rem;
-  padding: 1.875rem 0.9375rem;
-  justify-content: center;
 }
-.grid-armado .elegir-componentes .componentes-armado {
-  height: 250px;
-  width: 250px;
-  display: flex;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background-color: #f6f6f6;
-  border: 2px solid #afafaf;
-  border-radius: 10px;
+.grid-armado .product-grid {
+  display: grid;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-items: center;
 }
-.grid-armado .elegir-componentes .componentes-armado span {
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.188em;
+.grid-armado .product-grid h3 {
+  text-align: start;
+  font-size: 1.125em;
 }
-.grid-armado .elegir-componentes .componentes-armado img {
-  height: auto;
-  width: 100px;
+.grid-armado .product-grid img {
+  height: 22vh;
+  width: auto;
+  justify-self: center;
   transition: transform 0.2s ease;
   cursor: pointer;
 }
-.grid-armado .elegir-componentes .componentes-armado img:hover {
+.grid-armado .product-grid img:hover {
   transform: scale(1.1);
 }
-.grid-armado .lista-componentes {
-  display: grid;
-  justify-items: start;
-  text-align: start;
-  gap: 0.625rem;
-  margin: 1.5625rem;
+.grid-armado .product-grid input {
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  cursor: pointer;
 }
-.grid-armado .lista-componentes h3 {
+.grid-armado .caja2-grid {
+  margin-top: 20px;
+  min-width: 1.25rem;
+  height: 25vh;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+}
+.grid-armado .caja2-grid h3 {
   text-align: center;
   justify-self: center;
+  margin-left: 0;
 }
-.grid-armado .lista-componentes ul li {
-  font-size: 1.188em;
-  font-weight: 600;
+.grid-armado .caja2-grid ul li {
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.063em;
 }
 
 /*-----------------------------------------------------------------------Final Arma tu PC---------------------------------------------------------------------------------- */
+/*----------------------------------------------------------------------- Comienzo del Footer---------------------------------------------------------------------------------*/
 footer {
-  background-color: #8818ea;
+  background-color: rgb(92, 15, 163);
   display: flex;
   justify-content: space-around;
-  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 1.875rem 3.125rem 0.625rem;
-  gap: 0.3125rem;
+  align-items: center;
+  padding: 5px 5px;
+}
+
+.title-footer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 9px;
+}
+
+.p-footer p {
+  color: rgb(255, 255, 255);
+  font-size: 1.25em;
+  font-family: sans-serif;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+
+.p-footer p:last-child {
+  margin-bottom: 0px;
+}
+
+.logo-redes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo-redes img {
+  width: auto;
+  height: 8.5vh;
+  transition: transform 0.2s ease;
+  display: block;
+  margin-top: 0px;
+}
+
+.logo-redes img:hover {
+  transform: scale(1.1);
+}
+
+/*------------------------------------------------------------------------ Final del Footer---------------------------------------------------------------------------------- */
+footer {
+  background-color: rgb(92, 15, 163);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 5px 5px;
 }
 footer .title-footer {
-  margin-bottom: 0.4375rem;
-}
-footer .title-footer img {
-  display: block;
-  width: auto;
-  height: 1.25rem;
-}
-footer h2 {
-  color: #ebeaea;
-  margin: 0px;
-  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 9px;
 }
 footer .p-footer p {
-  font-size: 1.188em;
-  color: #ebeaea;
-  margin: 0px;
-  letter-spacing: 1px;
-  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 1.25em;
+  font-family: sans-serif;
+  margin-left: 10px;
+  margin-bottom: 4px;
+}
+footer .p-footer:last-child {
+  margin-bottom: 0px;
+}
+footer .logo-redes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+footer .logo-redes img {
+  width: auto;
+  height: 8.5vh;
+  transition: transform 0.2s ease;
+  display: block;
+  margin-top: 0px;
+}
+footer .logo-redes img:hover {
+  transform: scale(1.1);
 }
 
 /* -----------------------------------------------------------------------Comienzo de Media Query-----------------------------------------------------------------------------*/
 @media (max-width: 500px) {
   /*---------------------------------------------------------------------- Comienzo Mediaquery del header---------------------------------------------------------------------*/
   header .header-superior {
-    gap: 3px;
+    margin-top: 0px;
   }
   header .logo {
-    height: 16px;
+    height: 13vh;
+    margin-right: 0px;
   }
   header .search-bar {
-    max-width: 240px;
+    width: auto;
+  }
+  header .search-bar input {
+    padding-left: 0px;
+  }
+  header .search-bar button {
+    width: 7.8vw;
+    height: 5vh;
   }
   /*-----------------------------------------------------------------------Final Mediaquery del header------------------------------------------------------------------------*/
   /*---------------------------------------------------------------------- Comienzo Mediaquery del Main---------------------------------------------------------------------- */
@@ -500,27 +507,22 @@ footer .p-footer p {
   /* ------------------------------------------------------------------------Final Mediaquery del Main------------------------------------------------------------------------- */
   /*-----------------------------------------------------------------------Mediaquery pag. Contacto---------------------------------------------------------------------------*/
   .caja-sucursales {
-    max-width: 700px;
+    max-width: 31.25rem;
+    margin-bottom: 20px;
   }
   .caja-sucursales iframe {
-    width: 100%;
-    height: 350px;
+    border-radius: 10px;
+    max-width: 31.25rem;
+  }
+  .caja-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 31.25rem;
   }
   /*---------------------------------------------------------------------Final Mediaquery pag. Contacto-----------------------------------------------------------------------*/
   /* ------------------------------------------------------------------------ Inicio pag.Arma tu Pc---------------------------------------------------------------------------- */
   .grid-armado {
     grid-template-columns: 1fr;
   }
-  .grid-armado .elegir-componentes {
-    grid-template-columns: repeat(2, auto);
-  }
-  .grid-armado .elegir-componentes .componentes-armado {
-    width: 200px;
-  }
   /*-----------------------------------------------------------------------------Final Arma tu PC------------------------------------------------------------------------------ */
-  footer {
-    padding: 0.9375rem 0.4375rem 0.625rem;
-  }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=main.css.map */

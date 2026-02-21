@@ -3,55 +3,67 @@
 @use "../Utilities/mixins.scss" as m;
 
 .contenedor-contact {
-@include m.flex (column,center);
-}
-
-.title-sucursales {
-  margin-bottom: 10px;
+  @include m.flex(column, center);
+  padding: 30px 15px;
+  margin: 10px;
 }
 
 .caja-sucursales {
-  max-width: 40.625rem;
-  margin-bottom: 20px;
+  max-width: 900px;
+  width: 100%;
+  margin: auto;
 
   iframe {
     border-radius: 10px;
   }
 
   p {
-    color: $font_color;
-    font-family: $font_principal;
-    font-size: 1.063em;
-  }
+    font-size: 1.188em;
+    font-weight: 400;
 
-  .contacto-redes {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    &:first-of-type {
+      &::before {
+        content: "📍";
+      }
+    }
+
+    &:nth-of-type(2) {
+      &::before {
+        content: "📞";
+      }
+    }
+
+    &:nth-of-type(3) {
+      &::before {
+        content: "🕑";
+      }
+    }
   }
 }
 
 .caja-form {
-  padding-left: 9.375rem;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  max-width: 40.625rem;
+  @include m.flex(column, center);
+  max-width: 400px;
+  text-align: center;
 
   label {
-    color: $font_color;
-    font-size: 0.938em;
-    font-family: $font_forms;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 5px;
   }
 
   input,
   select,
   option,
-  textarea{
-
-@include m.forms;
+  textarea {
+    width: 100%;
+    @include m.forms;
+    text-align: center;
   }
 
-.btn {
-@include m.buttons;
+  .btn {
+    @include m.buttons;
+    margin-top: 8px ;
   }
 }
 
@@ -66,36 +78,56 @@
 
   .grid-login {
     display: grid;
-    place-items: center;
+    align-items: center;
+    justify-content: center;
+
+    section {
+max-width: 500px;
+width: 100%;
+
+    h2 {
+        margin: 10px;
+    }
+
+    }
+
   }
 
   .caja-login {
+    width: 100%;
+
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+
     h3 {
-      font-family: $font_principal;
-      font-size: 1em;
-      margin-top: 5px;
-      margin-bottom: 5px;
+      font-size: 16px;
+      
     }
 
     form {
       display: grid;
-      justify-items: center;
-      margin-top: 15px;
-      margin-bottom: 15px;
-      min-height: 12.5rem;
+      gap: 5px;
 
       label {
-        color: $font_color;
-        font-family: $font_forms;
-        font-size: 1em;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
       }
 
       input {
-@include m.forms;
+        @include m.forms;
+          width: 100%;
+          width: fit-content;
+          justify-self: center;
+        
       }
 
       .btn {
-      @include m.buttons;
+        @include m.buttons;
+        justify-self: center;
+        width: auto;
       }
     }
   }

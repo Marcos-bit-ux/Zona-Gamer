@@ -3,68 +3,69 @@
 
 header {
   background-color: $bg_hyf;
-  min-height: 15vh;
+  min-height: 100px;
+  width: 100%;
   display: flex;
-@include m.flex (column,center);
+  @include m.flex(column, center);
+  padding: .8125rem .625rem 0rem;
 
   .header-superior {
-@include m.flex (null,center);
-    margin-top: -10px;
+    @include m.flex(null, center);
+    gap: 10px;
+    width: 100%;
   }
 
   .logo {
     width: auto;
-    height: 15vh;
-    margin-right: 5px;
+    height: 22px;
+    display: block;
+    flex-shrink: 0;
   }
 
   .search-bar {
-    background-color: #fff;
-    width: 20vw;
-    height: 5vh;
-    border: #000000 solid 0.125rem;
-    border-radius: 1.875rem;
+    flex: 1;
+    max-width: 400px;
+    background-color: $font_colorhyf;
+    height: 31px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
+    padding: 0 .625rem;
+    border: 2px solid #afafaf;
 
     input {
-      font-size: 1.063em;
+      font-size: 1em;
       flex: 1;
-      border: 0;
-      outline: 0;
-      background-color: transparent;
-      color: rgb(000, 000, 000);
-      padding-left: 20px;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: black;
+      padding: .3125rem;
       cursor: text;
 
       &::placeholder {
         color: #888;
-        font-family: $font_principal;
       }
     }
 
     button {
-      background-color: transparent;
-      width: 3vw;
-      height: 5vh;
-      border-radius: 1.875rem;
+      border: none;
       cursor: pointer;
     }
   }
 
   .iconos-header {
     display: flex;
-    gap: 10px;
+    gap: .625rem;
   }
 
   .carrito-icon i {
     font-size: 1.563em;
-    color: $font_color;
-    margin-left: 10px;
+    color: $font_colorhyf;
   }
 
   .login-icon i {
     font-size: 1.563em;
-    color: $font_color;
+    color: $font_colorhyf;
   }
 }

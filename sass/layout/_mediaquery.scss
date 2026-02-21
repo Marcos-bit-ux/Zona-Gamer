@@ -3,31 +3,18 @@
 
 @media (max-width: 500px) {
   /*---------------------------------------------------------------------- Comienzo Mediaquery del header---------------------------------------------------------------------*/
-
   header {
-
     .header-superior {
-      margin-top: 0px;
+      gap:3px;
     }
 
     .logo {
-      height: 13vh;
-      margin-right: 0px;
+      height: 16px;
     }
 
-    .search-bar {
-      width: auto;
-
-      input {
-        padding-left: 0px;
-
-      }
-      
-        button {
-          width: 7.8vw;
-          height: 5vh;
-        }
-    }
+      .search-bar {
+    max-width: 240px;
+  }
   }
 
   /*-----------------------------------------------------------------------Final Mediaquery del header------------------------------------------------------------------------*/
@@ -42,30 +29,37 @@
 
   /*-----------------------------------------------------------------------Mediaquery pag. Contacto---------------------------------------------------------------------------*/
 
-  .caja-sucursales {
-    max-width: 31.25rem;
-    margin-bottom: 20px;
+.caja-sucursales {
+  max-width: 700px;
 
-    iframe {
-      border-radius: 10px;
-      max-width: 31.25rem;
-      
-    }
+  iframe {
+width: 100%;
+height: 350px;
   }
 
-  .caja-form {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    max-width: 31.25rem;
   }
 
   /*---------------------------------------------------------------------Final Mediaquery pag. Contacto-----------------------------------------------------------------------*/
 
   /* ------------------------------------------------------------------------ Inicio pag.Arma tu Pc---------------------------------------------------------------------------- */
 
-  .grid-armado {
-    grid-template-columns: 1fr;
+.grid-armado {
+  grid-template-columns: 1fr;
+
+  .elegir-componentes {
+    grid-template-columns: repeat(2, auto);
+
+    .componentes-armado {
+      width: 200px;
+    }
   }
+}
+
 
   /*-----------------------------------------------------------------------------Final Arma tu PC------------------------------------------------------------------------------ */
+
+footer {
+
+  padding: .9375rem .4375rem .625rem;
+}
 }
